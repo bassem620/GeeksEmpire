@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    background-color : #ffd527;
+    width: 100%;
+    position:fixed;
+    z-index: 999;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 25px;
+    
+}
+
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#2673b9;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.nav a{
+    color:#2673b9;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.nav a:hover{
+    color:blueviolet;
+}
+
+section{
+    padding:100px 50px;
+
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items:flex-start;
+    background:url(images/logob.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    
+}
+
+.main span{
+    display: inline-block;
+    margin-top: 2px;
+    color: #ffd527;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.main h3{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.main-button{
+    color:#2673b9;
+    background-color:#ffd527;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9em 2.1em;
+    border-radius: 15px;
+    margin-top: 250px;
+    margin-bottom: 20px;
+    transition: 0.7s ease ;
+}
+
+.main-button:hover{
+    background-color:#dfb921;
+    transform: scale(1.05);
+}
+
+.social-media a{
+    color:#ffd527;
+    margin-left: 0.12em;
+    padding-right:20px;
+    font-size: 1.7em;
+}
+
+.title{
+    color:#2673b9;
+    display:flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width:21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease ;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.icon{
+    color:#2673b9;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color:#2673b9;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin:10px;
+}
+
+.newly-added h2{
+    color:#ffd527;
+    display:flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.newly-added{
+    background-color:#2673b9;
+}
+
+.newly-added content{
+    margin-top: 30px;
+}
+
+.added{
+    background-color:#ffd527;
+    border-color: 3px solid black;
+    min-height: 14em;
+    width:23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin:20px;
+    transition: 0.7s ease;
+}
+
+.added:hover{
+    transform: scale(1.1);
+}
+
+.added-img img{
+    width:100%;
+
+}
+
+.added-info{
+    padding: 0.2em 1em;
+}
+
+.added-info h3{
+    color:#2673b9;
+    font-size: 1.5em;
+}
+
+.added-info a{
+    display: flex;
+    color:#2673b9;
+    font-size: 1.2em;
+    justify-content:right;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.7s ease;
+}
+
+.added-info a:hover{
+    color: purple;
+}
+
+.cards-contact .icon{
+    font-size: 4em;
+    text-align: center;
+    color: #2673b9;
+}
+
+.cards-contact .info h3{
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+}
+
+.footer{
+    background-color: #2673b9;
+    color: #ffd527;
+    padding: 2em;
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer-social-media i{
+    color:#ffd527;
+    margin-left: 0.12em;
+    padding-right:10px;
+    font-size: 1.7em;
+}
+
+@media (max-width:1024px){
+    *{
+        width:auto;
+        overflow-x: auto;
+    }
+    .logo{
+        display:none;
+    }
+    .nav a{
+        padding:0px 10px;
+        font-size: 1em;
+    }
+    .main-button{
+        margin-top: 420px;
+        margin-bottom: 10px;
+    }
+    section{
+        padding: 70px 50px;
+    }
+    .main{
+        background-size: 180vh;
+    }
+
+    
+}
